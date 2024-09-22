@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  role_service:
+    build:
+      context: ./role_service 
+      dockerfile: Dockerfile
+    container_name: role_service
+    ports:
+      - "3000:3000"
+    environment:
+      MONGO_URI: ${ROLE_MONGO_URI}  
