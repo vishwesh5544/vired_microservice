@@ -1,0 +1,3 @@
+[submodule "role_service"]
+	path = role_service
+	url = https://github.com/vishwesh5544/vired_role_service.git
