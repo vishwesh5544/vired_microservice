@@ -3,6 +3,7 @@
 
 ## Setup guide:
 1. Clone the repo using: `git clone https://github.com/vishwesh5544/vired_microservice.git`
-2. Provide necessary script to setup.sh. This script will setup all microservices for compose: `chmod +x ./scrips/setup.sh`
-3. Prepare `.env` from `.env.example`
-4. Run docker compose up: `docker compose up --build`
+2. Provide executable permission to setup.sh. This script will setup all microservices for compose:
+   `chmod +x ./scrips/setup.sh`
+4. Prepare `.env` from `.env.example`
+5. Run docker compose up: `docker compose up --build`
