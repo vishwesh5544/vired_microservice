@@ -1,7 +1,7 @@
 # Vired Microservice
 **Authored By**: (Vishwesh Shukla)[https://github.com/vishwesh5544]
 
-### Setup steps:
+### Setup guide:
 1. Clone the repo using: `git clone https://github.com/vishwesh5544/vired_microservice.git`
 2. Provide necessary script to setup.sh. This script will setup all microservices for compose: `chmod +x ./scrips/setup.sh`
 3. Prepare `.env` from `.env.example`
