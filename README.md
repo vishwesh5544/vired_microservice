@@ -1,5 +1,5 @@
 # Vired Microservice
-**Authored By**: (Vishwesh Shukla)[https://github.com/vishwesh5544]
+**Authored By**: [Vishwesh Shukla](https://github.com/vishwesh5544)
 
 ## Setup guide:
 1. Clone the repo using: `git clone https://github.com/vishwesh5544/vired_microservice.git`
