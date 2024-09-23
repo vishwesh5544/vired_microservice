@@ -17,7 +17,7 @@ fi
 # Initialize and update all submodules
 echo "Initializing and updating submodules..."
 git submodule init
-git submodule update --recursive
+git submodule update --remote --recursive
 
 # List all submodule URLs
 echo "Listing submodule URLs..."
