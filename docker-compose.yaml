@@ -1,12 +1,27 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  role_service:
-    build:
-      context: ./role_service 
-      dockerfile: Dockerfile
-    container_name: role_service
-    ports:
-      - "3000:3000"
-    environment:
-      MONGO_URI: ${ROLE_MONGO_URI}  
+    role_service:
+        build:
+            context: ./role_service
+            dockerfile: Dockerfile
+        container_name: role_service
+        ports:
+            - "3000:3000"
+        environment:
+            MONGO_URI: ${ROLE_MONGO_URI}
+
+    user_service:
+        build:
+            context: ./user_service
+            dockerfile: Dockerfile
+        container_name: user_service
+        ports:
+            - "8080:8080"
+        environment:
+            POSTGRES_HOST: ${POSTGRES_HOST}
+            POSTGRES_PORT: ${POSTGRES_PORT}
+            POSTGRES_DB: ${POSTGRES_DB}
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+            ROLE_SERVICE_URL: ${ROLE_SERVICE_URL}
